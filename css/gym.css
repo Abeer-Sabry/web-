@@ -1,0 +1,522 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor:#f13a11;
+}
+body{
+    font-size: 13px;
+}
+.container{ 
+    width: 85%;
+    margin: 0 auto;
+}
+section{
+    padding: 100px;
+}
+@font-face{
+    font-family:fontawesome;
+    src: url(../fonts/Plain-Bold.woff);
+      
+}
+@font-face{
+    font-family:font;
+    src: url(../fonts/Plain-Light.woff);    
+}
+
+.overlay{
+    background-color: rgba(31, 31, 31, 0.8);
+}
+header{
+    background-image:url(../images/hero-bg.jpg);
+    background-size:cover;   
+}
+nav .container .nav-row{
+    display: flex;
+}
+li{
+    display:inline-block;
+    list-style: none;
+}
+a{
+    text-decoration:none;    
+}
+img{
+    width: 100%;
+}
+/*global styling*/
+
+/*nav*/
+.logo{
+    width:20%;
+}
+ul.navigation{
+    width:60%;
+}
+.nav-contacts{
+    width:20%;
+}
+nav .container .nav-row {
+    padding: 15px 0;
+}
+
+nav .container .nav-row  .logo a{
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    font-family:fontawesome ;
+}
+nav .container .nav-row ul.navigation{
+    justify-content: flex-end;
+    margin-left: 200px;
+
+}
+nav .container .nav-row ul.navigation li{
+    padding: 10px 0;
+    margin: 0 20px;   
+    transition: 1s; 
+}
+nav .container .nav-row ul.navigation li a.navigate{
+    color: rgb(255, 255, 255);
+    font-family: font;  
+    font: 1rem; 
+    transition: .5s;
+}
+nav .container .nav-row ul.navigation li a.navigate:hover{
+    color:#f13a11 ;
+}
+nav .container .nav-row ul.navigation li a.navigate2{
+    color:#f13a11;
+}
+nav .container .nav-row  .nav-contacts{
+    padding: 10px 0;   
+}
+nav .container .nav-row  .nav-contacts span{
+    color: rgb(255, 255, 255); 
+    justify-content: space-between;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: .5s;
+}
+nav .container .nav-row  .nav-contacts span:hover{
+    color:#f13a11 ;
+}
+/*/nav*/
+
+/*header */
+.container .header-content{
+    text-align: center;
+    padding: 300px 0;   
+}
+.header-content .BUTTONS a{
+    display:inline-block; 
+    padding: 0 10px;
+    font-size: 15px;
+    margin: 10px 5px;
+}
+.header-content .BUTTONS a.start{
+    color: rgb(255, 255, 255);
+    font-size: 13px;   
+    transition: 0.3s;
+}
+.header-content .BUTTONS a.start:hover{
+    color:  #f13a11;
+}
+.header-content .BUTTONS a.learn{
+    color: #f13a11;
+    border: 1px solid #f13a11;
+    background-color: transparent;
+    padding: 10px;
+    transition:.5s;
+}
+.header-content .BUTTONS a.learn:hover{
+    border: 1px solid #ffffff;
+    background-color:  #ffffff;  
+}
+header h1{
+    font-family:fontawesome;
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+}
+header h4, header a{
+    font-family:font;
+}
+.header-content .heading h4{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #909090;
+    letter-spacing: 1px;
+}
+/*/ header */
+
+/* Reservation */
+section.Reservation{
+    background-color: rgb(14, 14, 14);
+}
+section.Reservation  .Reservation-row{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+section.Reservation  .Reservation-row .Reservation{
+    width: 49%;
+}
+section.Reservation  .Reservation-row .Reservation h1{   
+    font-family:fontawesome ;
+    font-size: 2.1rem;
+}
+section.Reservation  .Reservation-row .Reservation h3{
+    font-family:font;
+    margin: 20px 0;
+}
+section.Reservation  .Reservation-row h1,section.Reservation  .Reservation-row h3,section.Reservation  .Reservation-row h5{
+    color: rgb(255, 255, 255);
+} 
+section.Reservation  .Reservation-row  .Reservation p{
+    color:#909090;
+    margin: 20px 0;
+    font-family:font;
+    line-height: 25px;
+}
+section.Reservation  .Reservation-row .Reservation-button button{
+    border: 1px solid #f7390f;
+    background-color: #f7390f;
+    color: rgb(255, 255, 255);
+    font-size: .95rem;
+    padding: 15px;
+    width: 400px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+section.Reservation  .Reservation-row .Reservation-button button:hover{
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: #f7390f;
+}
+section.Reservation  .Reservation-row .timing{
+    border-left:1px solid #585858;
+    padding: 0px 50px;
+    height: 217px;
+    width: 49%;
+}
+section.Reservation  .Reservation-row .timing h1{
+    margin-bottom: 25px;
+    font-family:fontawesome ;
+    font-size: 2.1rem;
+}
+section.Reservation  .Reservation-row .timing h3{
+    margin: 10px 0;
+    font-family:font;
+}
+section.Reservation  .Reservation-row .timing p{
+    font-family:font;
+    color: #909090;
+    font-size: 1rem;
+}
+/*/ Reservation */
+
+/* info */
+section.info{
+    background-color: #f8f9fad8;
+}
+section.info .info-row{
+    display:flex;
+    justify-content:space-between;      
+}
+section.info .info-row .info-paragraph{
+   width:48%;
+   padding:0 40px ;  
+}
+section.info .info-row .info-paragraph h1{
+    font-family:fontawesome;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:rgb(33, 37, 41);
+}
+section.info .info-row .info-paragraph p{
+    color: #50575e;
+    font-family:font;
+    line-height:25px;
+    width: 90%;
+    font-size: 1.1rem;  
+    font-weight: 400; 
+}
+section.info .info-row .info-paragraph p.par{
+   margin-top: 20px;
+}
+section.info .info-row .trainers{
+    width:23%;
+    background-color: rgb(255, 255, 255);
+}
+section.info .info-row .trainers-row{
+    display: flex; 
+    justify-content: space-between;   
+}
+section.info .info-row .trainers-row .trainer-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+section.info .info-row .trainers-row .trainer-social span{
+    margin: 3px 0;
+    font-size: 1rem;
+    color: #6c757d;
+    transition: 0.4s;
+}
+section.info .info-row .trainers-row .trainer-social span:hover{
+    color: var(--maincolor);
+}
+section.info .info-row .trainers .trainer-name{
+    padding: 20px;
+}
+section.info .info-row .trainers .trainer-name h1{
+    margin: 4px 0;
+    font-family:fontawesome;
+    color:#343a40 ;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+section.info .info-row .trainers .trainer-name p{
+    margin: 4px 0;
+    color:#343a40;
+    font-family:font;
+    font-size: .9rem;
+}
+/* /info */
+
+/* training-classes */
+section.training-classes .training-row .classes{
+    text-align: center;
+    margin: 20px 0;
+}
+section.training-classes .training-row .classes-types{
+    background-color: #f8f9fad8;
+}
+section.training-classes .training-row .classes h1{
+    color: rgb(26, 29, 32);
+    font-family:fontawesome ;
+    font-size: 2rem;
+    margin-bottom: 60px;
+}
+section.training-classes .training-row .classes h3{
+    color:#5e666e ;
+    font-family: font;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+section.training-classes .training-row .classes-titles{
+    display: flex;
+    justify-content: space-between;
+}
+section.training-classes .training-row .classes-titles .classes-types{
+    width: 31%;
+    background-color: #ffffff;
+}
+section.training-classes .training-row .classes-titles .classes-info{
+    display: flex;
+    justify-content: space-between;
+}
+section.training-classes .training-row .classes-titles .classes-info h1{
+    padding: 5px 20px;
+    font-family:fontawesome;
+    font-size:1.5rem ;
+}
+section.training-classes .training-row .classes-titles .classes-info p{
+    padding: 5px 20px; 
+    font-family:fontawesome;
+    font-size: 1rem;
+    font-weight: normal;  
+}
+section.training-classes .training-row .classes-titles .classes-reading{
+    font-family: font;
+    padding: 6px 20px; 
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555b61;    
+}
+section.training-classes .training-row .classes-titles .classes-price{
+    border:1px solid var(--maincolor);
+    background-color: var(--maincolor);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    font-size: 1rem;
+    font-family:fontawesome;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-right: 40px;
+}
+/* /training-classes */
+
+/* time */
+section.time{
+    background-color:  rgb(14, 14, 14); 
+    text-align: center;  
+}
+section.time .timetable-row .time-title h1{
+     margin-bottom: 50px;   
+     color: #ffffff;  
+     font-family: fontawesome;
+     font-size: 2rem;
+}
+section.time .timetable-row .time-title h3{
+    margin: 5px 0;
+    font-family: font;
+    color:#666c72;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight:600;
+}
+tr,td{
+     border-bottom:1px solid rgb(32, 32, 32);
+     border-right:1px solid  rgb(32, 32, 32) ;   
+}
+section.time .timetable-row table tr th{
+    background-color: var(--maincolor);
+    padding: 15px;
+    color: white;
+    font-family: font;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+section.time .timetable-row table tr td.base{
+    background-color: var(--maincolor);
+    padding: 25px;
+    color: white;
+    font-family: font;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.1rem;    
+}
+section.time .timetable-row table tr td{
+    color: white; 
+    text-align: center;  
+}
+section.time .timetable-row table tr td.color .spor-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;   
+    padding: 20px 30px;
+}
+section.time .timetable-row table tr td.color .spor-name strong{
+    font-family: fontawesome;
+   font-weight:550;
+   font-size: 1rem;
+   padding-bottom: 5px;
+}
+section.time .timetable-row table tr td.color .spor-name span{
+    font-family:font;
+    font-size: 12px;
+    font-weight:600;
+    text-transform: uppercase;
+    color: #f8f9fa98;
+}
+/* /time */
+
+/* contact */
+section.contact .contact-row .contact-title h1{
+    font-family:fontawesome ;
+    color:  rgb(26, 29, 32);
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+section.contact .contact-row{
+    display:flex;
+    justify-content: center;  
+}
+section.contact .contact-row .workout{
+    margin-left: 50px;
+}
+section.contact .contact-row .contact-info{ 
+    width:42%  
+    
+}
+section.contact .contact-row .directions{
+    width:42%;
+}
+section.contact  .contact-row  form{
+    display: flex;
+    flex-direction:column;
+}
+section.contact  .contact-row  form  input ,section.contact  .contact-row  form textarea{
+    margin:10px 0;
+    padding: 20px 15px;
+    width: 80%;
+    font-family:font;
+    color: rgb(26, 29, 32);
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid #ccccccf3 ;
+}
+section.contact  .contact-row  form  button{
+    border:1px solid  rgb(26, 29, 32);
+    background-color: rgb(26, 29, 32);
+    width:80% ;
+    padding: 20px 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 120px;
+    margin-top:12px;
+    font-family: font;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.5s;
+}
+section.contact  .contact-row  form  button:hover{
+    background-color: var(--maincolor);
+    border:1px solid  var(--maincolor);
+}
+section.contact  .contact-row .directions .direct h1{
+    font-family:fontawesome;
+    font-size: 2rem;
+    padding-bottom: 17px;
+}
+section.contact  .contact-row .directions .direct-text{
+    display: flex;
+}
+section.contact  .contact-row .directions .direct-text i{
+    color: var(--maincolor);
+    margin-right: 5px;
+    margin-top: 4px;
+    font-size: 1rem;
+}
+section.contact  .contact-row .directions .direct-text p{
+    font-family: font;
+    font-size:1.2rem ;
+    color:#666c72 ;
+    border-bottom: 1px solid #d1d0d0 ;
+    padding-bottom: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+section.contact  .contact-row .map iframe{
+    width: 100%;
+    height: 300px;
+}
+/* /contact */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
